@@ -23,8 +23,8 @@ const getAProduct = async (id) => {
 
 // Create query
 
-const addAProduct = async (snack) => {
-  const { name, description, price, rating, is_favorite, image_url } = snack;
+const addAProduct = async (product) => {
+  const { name, description, price, rating, is_favorite, image_url, year, mileage } = product;
 
   try {
     const newProduct = await db.one(
@@ -51,8 +51,8 @@ const deleteAProduct = async (id) => {
 };
 
 // Update query
-const updateAProduct = async (id, snack) => {
-  const { name, description, price, rating, is_favorite, image_url } =
+const updateAProduct = async (id, product) => {
+  const { name, description, price, rating, is_favorite, image_url, year, mileage } =
     product;
   try {
     const updatedProduct = await db.one(
