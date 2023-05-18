@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* margin: 170px 0 0;  */
+    /* padding-top: 175px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+  }
+  
+  .about-wrapper {
+    margin-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .about {
+    
+    text-align: justify;
+    padding-top: 110px;
+    /* margin-top: 20px;  */
+    margin-bottom: 50px;
+  }
+  
+  .about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    text-align: center;
+  }
+  
+  .team h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .member-card {
+    flex: 0 0 40%;
+    margin: 55px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .member-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .member-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  
+  .links-container a {
+    display: inline-block;
+    /* background-color: #007bff; */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .links-container a:hover {
+    background-color: #007bff;
+  }
+  
+  .member-card {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15),
+                0 12px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  .about-wrapper .trello-board:hover h1,
+  .about-wrapper .wireframe:hover h1 {
+    color: red;
+    text-decoration: underline;
+  }
