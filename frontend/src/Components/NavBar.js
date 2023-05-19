@@ -1,44 +1,51 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import CarButton from "../assets/CarButton.png";
+import LuxuryRidesLogo from "../assets/LuxuryRides.png";
 
-export default function NavBar() {
+const Logo = () => {
+  return (
+    <Link className="navbar-brand d-flex flex-column align-items-center" to="/products">
+      <img
+        src={CarButton}
+        alt="Car Button Logo"
+        className="logo-image"
+        style={{
+          width: "120px",
+          height: "auto",
+          transition: "transform 0.3s",
+        }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      />
+      <div className="ml-2" style={{ fontSize: "14px" }}>
+        Our Inventory
+      </div>
+    </Link>
+  );
+};
+
+const Title = () => {
+  return (
+    <img
+      src={LuxuryRidesLogo}
+      alt="LuxuryRides Logo"
+      className="logo-image"
+      style={{
+        width: "275px",
+        height: "auto",
+      }}
+    />
+  );
+};
+
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#616' }}>
       <div className="container-fluid">
-      <Link
-          className="navbar-brand d-flex flex-column align-items-center"
-          to="/products"
-        >
-          <img
-            src={CarButton}
-            alt="LuxuryRides Logo"
-            className="logo-image"
-            style={{
-              width: "120px",
-              height: "auto",
-              transition: "transform 0.3s",
-            }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-          />
-          <div className="ml-2" style={{ fontSize: "14px" }}>
-            Our Inventory
-          </div>
-        </Link>
+        <Logo />
         <div className="d-flex flex-grow-1 justify-content-center align-items-center">
-        <h2
-            className="navbar-title text-center m-0"
-            style={{
-              textAlign: 'center',
-              fontFamily: 'Lora, serif', 
-              fontStyle: 'italic', 
-              background: 'linear-gradient(to right, #ffffff, #e8e8e8)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
-          >
-            <span className="fw-bold">LuxuryRides</span>
-          </h2>
+          <Title />
         </div>
         <div className="ml-auto">
           <ul className="navbar-nav">
@@ -57,7 +64,10 @@ export default function NavBar() {
       </div>
     </nav>
   );
-}
+};
+
+export default NavBar;
+
 
 
 
