@@ -17,7 +17,6 @@ products.get("/", async (req, res) => {
   const allProducts = await getAllProducts();
 
   if (allProducts) {
-    // console.log(allProducts);
     res.status(200).json(allProducts);
   } else {
     res.status(404).json({ error: "server error" });
@@ -28,11 +27,8 @@ products.get("/", async (req, res) => {
 products.get("/:id", async (req, res) => {
   const { id } = req.params;
   const product = await getAProduct(id);
-console.log("show route sucessfully reached")
   if (product) {
-    // console.log(product);
     res.status(200).json(product);
-    // console.log(product)
   } else {
     res.status(404).json({ error: "not found" });
   }
