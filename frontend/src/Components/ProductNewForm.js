@@ -95,6 +95,7 @@ function ProductNewForm() {
                 type="number"
                 name="price"
                 value={product.price}
+                placeholder="How much"
                 onChange={handleTextChange}
               />
             </div>
@@ -107,6 +108,7 @@ function ProductNewForm() {
                 type="url"
                 name="photo"
                 value={product.image_url}
+                placeholder="Enter a URL"
                 onChange={handleTextChange}
               />
             </div>
@@ -123,6 +125,7 @@ function ProductNewForm() {
                 type="number"
                 name="rating"
                 value={product.rating}
+                placeholder="From 0 to 5"
                 onChange={handleTextChange}
               />
             </div>
@@ -134,6 +137,7 @@ function ProductNewForm() {
                 type="number"
                 name="calories"
                 value={product.year}
+                placeholder="Enter year"
                 onChange={handleTextChange}
               />
             </div>
@@ -146,6 +150,7 @@ function ProductNewForm() {
                 type="number"
                 name="mileage"
                 value={product.mileage}
+                placeholder="Enter mileage"
                 onChange={handleTextChange}
               />
             </div>

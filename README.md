@@ -114,9 +114,21 @@ To connect to the database and view the tables:
 
 1.  Open the PostgreSQL command line interface by running the following command:   
         1.  psql -U postgres -f db/schema.sql<br>
-        2.  psql -U postgres -f db/seed.sql
-        3.  Alternatively: to start the db, npm run db:start & to shutdown the db, npm run db:shutdown
+        2.  psql -U postgres -f db/seed.sql   or to run run both 'npm run db:setup'
+                db:setup: This script is used to set up the initial state of the database. It executes SQL scripts that define the database schema and potentially populate initial data. The purpose of the db:setup script is to create the necessary tables and configure the database to a predefined state. This script is typically run once during the initial setup or when you want to reset the database to its initial state.
+        3.  To start the db, 'npm run db:start' & to shutdown the db, 'npm run db:shutdown'
+                db:start: This script is used to start the database server. It ensures that the database server is up and running, allowing your application to establish a connection and interact with the database.
+                The db:stop script is used to stop the running instance of the database server. It gracefully shuts down the database server, terminating any active connections and releasing system resources. The purpose of the db:stop script is to ensure a clean and controlled shutdown of the database server.
 
+                Typically, you would use the db:stop script when you want to stop the database server after you have finished using it or when you need to perform maintenance tasks. It ensures that the database server is properly shut down, preventing any potential data corruption or inconsistencies.
+
+        4.  To summarize:
+
+                db:start starts the database server, making it available for your application to connect.
+                db:setup initializes the database with the necessary structure and initial data.
+                db:stop gracefully shuts down the running instance of the database server.
+
+                These scripts work together to manage the lifecycle of the database server, from starting it up to setting it up and finally stopping it when it's no longer needed.
 
 
 
