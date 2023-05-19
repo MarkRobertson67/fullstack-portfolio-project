@@ -50,7 +50,13 @@ function ProductDetails() {
     setShowConfirm(false);
   };
 
-
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    currencyDisplay: 'symbol',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  });
 
   return (
   <div className="container text-center" style={{ paddingTop: "150px" }}>
@@ -71,9 +77,12 @@ function ProductDetails() {
         {product.is_favorite ? <span>⭐️</span> : null} {product.name}
       </h3>
 
-      <h6>{product.category}</h6>
-      <p>Rating: {product.rating} out of 5</p>
-      <p>Description: {product.description}</p>
+      <p style={{ marginBottom: "8px" }}>Rating: {product.rating} out of 5</p>
+      <p style={{ marginBottom: "8px" }}>Description: {product.description}</p>
+      <p style={{ marginBottom: "8px" }}>Price: {product.price ? formatter.format(product.price) : ''}</p>
+      <p style={{ marginBottom: "8px" }}>Year: {product.year}</p>
+      <p style={{ marginBottom: "8px" }}>Mileage: {product.mileage}</p>
+
 
       {product.image_url && (
         <img
@@ -124,7 +133,6 @@ function ProductDetails() {
     {/* <Reviews product={product} /> */}
   </div>
 );
-
 }
 
 export default ProductDetails;
