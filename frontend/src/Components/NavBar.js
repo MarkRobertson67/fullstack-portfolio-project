@@ -26,7 +26,13 @@ export default function NavBar() {
           </div>
         </Link>
         <div className="d-flex flex-grow-1 justify-content-center align-items-center">
-          <h2 className="navbar-title text-white text-center m-0">
+          <h2 className="navbar-title text-white text-center m-0" style={{
+        textAlign: "center",
+        fontFamily: "Comic Sans MS, cursive",
+        background: "linear-gradient(to right, red, white, blue)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }}>
             <span className="fw-bold">LuxuryRides</span>
           </h2>
         </div>
