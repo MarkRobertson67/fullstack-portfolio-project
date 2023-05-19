@@ -8,7 +8,7 @@
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "cd frontend && npm start",
     "start:backend": "cd backend && nodemon server.js",
-    "db:setup": "psql -U postgres -f db/schema.sql && psql -U postgres -f db/seed.sql",
+    "db:setup": "psql -U postgres -f backend/db/schema.sql && psql -U postgres -f backend/db/seed.sql",
     "db:shutdown": "pg_ctl -D \"/Users/markrobertson/Library/Application Support/Postgres/var-15\" stop",
     "db:start": "pg_ctl -D \"/Users/markrobertson/Library/Application Support/Postgres/var-15\" start"
   },
