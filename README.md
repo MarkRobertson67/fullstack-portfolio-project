@@ -1,28 +1,29 @@
 # LuxuryRides App
 
 
-### *Install procedure at end of this page* 
+### *(Install procedure at end of this page)* 
 
-# **About Our Project** 
+## **About My Project** 
 
 
 <!-- <a href="https://NETLIFY LINK" target="_blank">Click here - LuxuryRides App</a> -->
 
+
 Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"
 
-                Welcome to LuxuryRides, the premier platform for enthusiasts and collectors seeking the finest and most sought-after automobiles. Our full-stack application combines cutting-edge technology with a passion for luxury vehicles, providing you with an exceptional user experience. Whether you're a connoisseur, a dreamer, or a discerning buyer, LuxuryRides is your gateway to the world of high-end automotive excellence.
-                  
-                  With LuxuryRides, we've curated a meticulously crafted selection of iconic and rare automobiles. From elegant convertibles to powerful sports cars, our collection showcases the most coveted brands and models in the industry. Our team of experts scours the market to bring you a wide range of options, ensuring that you can find the car of your dreams.
-                  
-                  The front-end of our application is built on React, offering a seamless and intuitive interface for browsing, exploring, and interacting with our collection. You can easily perform CRUD operations on each vehicle, from viewing detailed information and images to creating new listings and editing existing ones. Our thoughtfully designed forms make it effortless to add and update listings, ensuring that the process is user-friendly and efficient.
-                 
-                  On the back-end, our RESTful server powers the entire application, allowing for seamless communication and data management. We've implemented a robust database structure with multiple fields and data types, ensuring the accuracy and integrity of our car listings. You can expect a reliable and secure experience, with routes dedicated to creating, reading, updating, and deleting resources. Additionally, our server provides appropriate responses for unmatched routes, ensuring a smooth browsing experience.
-                  
-                  But LuxuryRides is more than just a platform for browsing and buying cars. We've added unique features that go beyond the traditional scope. Our innovative sorting and filtering options enable you to discover vehicles based on specific criteria, making it easier to find your perfect match. 
-                  
-                  To bring LuxuryRides to life, we've deployed both the front-end and back-end applications to the web. You can access our platform from anywhere, anytime, using the provided URL. Our GitHub repositories house the source code for both applications, ensuring transparency and collaboration. You'll also find comprehensive setup instructions and documentation in the readme files, allowing you to explore and contribute to the project.
-                  
-                  Experience the thrill of luxury automotive excellence with LuxuryRides. Start your journey today by visiting our website and discover a world where passion meets craftsmanship. Explore our collection, create your dream car, and immerse yourself in the captivating world of high-end and collectable automobiles. LuxuryRides is here to make your automotive dreams a reality.
+Welcome to LuxuryRides, the premier platform for enthusiasts and collectors seeking the finest and most sought-after automobiles. Our full-stack application combines cutting-edge technology with a passion for luxury vehicles, providing you with an exceptional user experience. Whether you're a connoisseur, a dreamer, or a discerning buyer, LuxuryRides is your gateway to the world of high-end automotive excellence.
+
+With LuxuryRides, we've curated a meticulously crafted selection of iconic and rare automobiles. From elegant convertibles to powerful sports cars, our collection showcases the most coveted brands and models in the industry. Our team of experts scours the market to bring you a wide range of options, ensuring that you can find the car of your dreams.
+
+The front-end of our application is built on React, offering a seamless and intuitive interface for browsing, exploring, and interacting with our collection. You can easily perform CRUD operations on each vehicle, from viewing detailed information and images to creating new listings and editing existing ones. Our thoughtfully designed forms make it effortless to add and update listings, ensuring that the process is user-friendly and efficient.
+
+On the back-end, our RESTful server powers the entire application, allowing for seamless communication and data management. We've implemented a robust database structure with multiple fields and data types, ensuring the accuracy and integrity of our car listings. You can expect a reliable and secure experience, with routes dedicated to creating, reading, updating, and deleting resources. Additionally, our server provides appropriate responses for unmatched routes, ensuring a smooth browsing experience.
+
+But LuxuryRides is more than just a platform for browsing and buying cars. We've added unique features that go beyond the traditional scope. Our innovative sorting and filtering options enable you to discover vehicles based on specific criteria, making it easier to find your perfect match.
+
+To bring LuxuryRides to life, we've deployed both the front-end and back-end applications to the web. You can access our platform from anywhere, anytime, using the provided URL. Our GitHub repositories house the source code for both applications, ensuring transparency and collaboration. You'll also find comprehensive setup instructions and documentation in the readme files, allowing you to explore and contribute to the project.
+
+Experience the thrill of luxury automotive excellence with LuxuryRides. Start your journey today by visiting our website and discover a world where passion meets craftsmanship. Explore our collection, create your dream car, and immerse yourself in the captivating world of high-end and collectible automobiles. LuxuryRides is here to make your automotive dreams a reality.
 <br></br>
 
 ## App Screenshots
@@ -30,22 +31,22 @@ Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable 
 <!-- <img src="./public/homescreen.png" alt="Screenshot a" width="68%" title="The Home Screen"> -->
 ### The Home Screen
 
-| ![image](./front-end/src/assets/HomeScreen.png "The Home Screen") |
+| ![image](./frontend/src/assets/HomeScreen.png "The Home Screen") |
 |-|
 
 
 ### Individual Product Page
 
-| ![image](./front-end/src/assets/IndividualProduct.png "Individual Product Page") |
+| ![image](./frontend/src/assets/IndividualProduct.png "Individual Product Page") |
 |-|
 
 
 ### New Product Page
 
-| ![image](./front-end/src/assets/NewProductPage.png "New Product Page") |
+| ![image](./frontend/src/assets/NewProductPage.png "New Product Page") |
 |-|
 
-/Users/markrobertson/Desktop/ProductsAppFolder/front-end/src/assets/NewProductPage.png
+/Users/markrobertson/Desktop/ProductsAppFolder/frontend/src/assets/NewProductPage.png
 
 <br></br>
 ## 😁 About the developer 😁
@@ -120,15 +121,16 @@ To connect to the database and view the tables:
                 db:start: This script is used to start the database server. It ensures that the database server is up and running, allowing your application to establish a connection and interact with the database.
                 The db:stop script is used to stop the running instance of the database server. It gracefully shuts down the database server, terminating any active connections and releasing system resources. The purpose of the db:stop script is to ensure a clean and controlled shutdown of the database server.
 
-                Typically, you would use the db:stop script when you want to stop the database server after you have finished using it or when you need to perform maintenance tasks. It ensures that the database server is properly shut down, preventing any potential data corruption or inconsistencies.
+                Typically, you would use the `db:stop` script when you want to stop the database server after you have finished using it or when you need to perform maintenance tasks. It ensures that the database server is properly shut down, preventing any potential data corruption or inconsistencies.
 
-        4.  To summarize:
+        4.   To summarize:
 
-                db:start starts the database server, making it available for your application to connect.
-                db:setup initializes the database with the necessary structure and initial data.
-                db:stop gracefully shuts down the running instance of the database server.
+                - `db:start` starts the database server, making it available for your application to connect.
+                - `db:setup` initializes the database with the necessary structure and initial data.
+                - `db:stop` gracefully shuts down the running instance of the database server.
 
-                These scripts work together to manage the lifecycle of the database server, from starting it up to setting it up and finally stopping it when it's no longer needed.
+These scripts work together to manage the lifecycle of the database server, from starting it up to setting it up and finally stopping it when it's no longer needed.
+
 
 
 
