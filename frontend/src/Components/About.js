@@ -28,7 +28,7 @@ export default function About( { mode } ) {   // mode because
           filter: mode ? "brightness(80%)" : "none",
         }}>
           
-                <div className="about">
+                <div className="about"><br />
                   <h1>About my Project</h1>
                   
                   <p>
@@ -80,13 +80,13 @@ export default function About( { mode } ) {   // mode because
           </div>
         ))}
       </div>
-      {/* <div className="trello-board">
-          <a href="https://trello.com/invite/b/q3MjafJY/ATTI5ec278cb24bf01d48f6285b2ddf24ce9D74B7E3C/snacks-simple-project-board" target="_blank" rel="noopener noreferrer">
+      <div className="trello-board">
+          <a href="https://trello.com/b/M5mUJwWm/luxuryrides" target="_blank" rel="noopener noreferrer">
           <h1>Trello Board</h1>
         </a>
       </div>
-      <div className="wireframe">
-        <a href="https://lucid.app/lucidchart/b4a7f661-b0e1-4ae8-b8d8-744fc2f7ca0d/edit?viewport_loc=-387%2C-17%2C2736%2C1355%2C0_0&invitationId=inv_cc436efd-3923-431e-8c96-ff955f0cb6d6" target="_blank" rel="noopener noreferrer">
+      {/* <div className="wireframe">
+        <a href="https://lucid.app/lucidchart" target="_blank" rel="noopener noreferrer">
           <h1>Wireframe</h1>
         </a>
       </div> */}
