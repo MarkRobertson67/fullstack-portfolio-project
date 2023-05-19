@@ -37,19 +37,19 @@ Experience the thrill of luxury automotive excellence with LuxuryRides. Start yo
 ### The Home Screen
 
 | ![image](./frontend/src/assets/HomeScreen.png "The Home Screen") |
-|-|<br />
+|-|
 
 
 ### Individual Product Page
 
 | ![image](./frontend/src/assets/IndividualProduct.png "Individual Product Page") |
-|-|<br />
+|-|
 
 
 ### New Product Page
 
 | ![image](./frontend/src/assets/NewProductPage.png "New Product Page") |
-|-|<br />
+|-|
 
 /Users/markrobertson/Desktop/ProductsAppFolder/frontend/src/assets/NewProductPage.png
 
