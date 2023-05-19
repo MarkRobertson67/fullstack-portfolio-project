@@ -5,7 +5,7 @@ import githubLogo from "../assets/github.png";
 import linkedinLogo from "..//assets/linkedin.png";
 
 
-export default function About( { mode } ) {   // mode because 
+export default function About() {  
 
     const teamMembers = [
     
@@ -24,9 +24,7 @@ export default function About( { mode } ) {   // mode because
 
 
     return (
-        <div className="about-wrapper" style={{ 
-          filter: mode ? "brightness(80%)" : "none",
-        }}>
+        <div className="about-wrapper">
           
                 <div className="about"><br />
                   <h1>About my Project</h1>
@@ -46,7 +44,7 @@ export default function About( { mode } ) {   // mode because
                   On the back-end, our RESTful server powers the entire application, allowing for seamless communication and data management. We've implemented a robust database structure with multiple fields and data types, ensuring the accuracy and integrity of our car listings. You can expect a reliable and secure experience, with routes dedicated to creating, reading, updating, and deleting resources. Additionally, our server provides appropriate responses for unmatched routes, ensuring a smooth browsing experience.
                   </p>
                   <p>
-                  But LuxuryRides is more than just a platform for browsing and buying cars. We've added unique features that go beyond the traditional scope. Our innovative sorting and filtering options enable you to discover vehicles based on specific criteria, making it easier to find your perfect match. Additionally, we've incorporated a captivating image carousel and an engaging infinite-scroll functionality, enhancing your overall experience.
+                  But LuxuryRides is more than just a platform for browsing and buying cars. We've added unique features that go beyond the traditional scope. Our innovative sorting and filtering options enable you to discover vehicles based on specific criteria, making it easier to find your perfect match. 
                   </p>
                   <p>
                   To bring LuxuryRides to life, we've deployed both the front-end and back-end applications to the web. You can access our platform from anywhere, anytime, using the provided URL. Our GitHub repositories house the source code for both applications, ensuring transparency and collaboration. You'll also find comprehensive setup instructions and documentation in the readme files, allowing you to explore and contribute to the project.
@@ -85,12 +83,8 @@ export default function About( { mode } ) {   // mode because
           <h1>Trello Board</h1>
         </a>
       </div>
-      {/* <div className="wireframe">
-        <a href="https://lucid.app/lucidchart" target="_blank" rel="noopener noreferrer">
-          <h1>Wireframe</h1>
-        </a>
-      </div> */}
     </div>
   </div>
 );
-    }
+}
+

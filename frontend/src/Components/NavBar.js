@@ -3,7 +3,7 @@ import CarButton from "../assets/CarButton.png";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#616' }}>
       <div className="container-fluid">
       <Link
           className="navbar-brand d-flex flex-column align-items-center"
@@ -26,7 +26,17 @@ export default function NavBar() {
           </div>
         </Link>
         <div className="d-flex flex-grow-1 justify-content-center align-items-center">
-          <h2 className="navbar-title text-white text-center m-0">
+        <h2
+            className="navbar-title text-center m-0"
+            style={{
+              textAlign: 'center',
+              fontFamily: 'Lora, serif', 
+              fontStyle: 'italic', 
+              background: 'linear-gradient(to right, #ffffff, #e8e8e8)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          >
             <span className="fw-bold">LuxuryRides</span>
           </h2>
         </div>
