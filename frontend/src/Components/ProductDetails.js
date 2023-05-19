@@ -61,18 +61,6 @@ function ProductDetails() {
 
   return (
   <div className="container text-center" style={{ paddingTop: "150px" }}>
-    <h1
-      className="text-center"
-      style={{
-        textAlign: "center",
-        fontFamily: "Comic Sans MS, cursive",
-        background: "linear-gradient(to right, red, red)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }}
-    >
-      Your Choice Car is....
-    </h1>
     <article>
       <h3>
         {product.is_favorite ? <span>⭐️</span> : null} {product.name}
@@ -89,9 +77,11 @@ function ProductDetails() {
         <img
           src={product.image_url}
           alt={product.name}
-          style={{ width: "auto", height: "300px", objectFit: "contain" }}
+          style={{ width: "auto", height: "300px", objectFit: "contain", transition: "transform 0.3s", }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.5)")}
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
         />
-      )}
+      )}<br /><br />
 
       <div className="row text-center">
         <div className="col-md-4 mx-auto">

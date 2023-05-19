@@ -1,13 +1,13 @@
 {
   "name": "full-stack-portfolio-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "LuxuryRides",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-    "start:frontend": "cd front-end && npm start",
-    "start:backend": "cd back-end && nodemon server.js",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && nodemon server.js",
     "db:setup": "psql -U postgres -f db/schema.sql && psql -U postgres -f db/seed.sql",
     "db:shutdown": "pg_ctl -D \"/Users/markrobertson/Library/Application Support/Postgres/var-15\" stop",
     "db:start": "pg_ctl -D \"/Users/markrobertson/Library/Application Support/Postgres/var-15\" start"
@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/MarkRobertson67/fullstack-portfolio-project#readme",
   "dependencies": {
-    "concurrently": "^8.0.1",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "pg": "^8.11.0"
+    "concurrently": "^8.0.1"
+   
   }
 }
