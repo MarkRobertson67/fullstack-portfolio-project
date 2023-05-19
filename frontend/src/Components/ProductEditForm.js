@@ -23,22 +23,26 @@ function ProductEditForm() {
   const updateProduct = (updatedProduct) => {
     axios
       .put(`${API}/products/${id}`, updatedProduct)
-      .then(
-        () => {
-          navigate(`/products/${id}`);
-        },
-        (error) => console.error(error)
-      )
-      .catch((c) => console.warn("catch", c));
+      .then(() => {
+        navigate(`/products/${id}`);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const handleTextChange = (event) => {
-    setProduct({ ...product, [event.target.id]: event.target.value });
+    setProduct((prevProduct) => ({
+      ...prevProduct,
+      [event.target.id]: event.target.value,
+    }));
   };
 
   const handleCheckboxChange = (event) => {
-    console.log(event.target.id)
-    setProduct({ ...product, [event.target.id]: !product[event.target.id] });
+    setProduct((prevProduct) => ({
+      ...prevProduct,
+      [event.target.id]: !prevProduct[event.target.id],
+    }));
   };
 
   useEffect(() => {
