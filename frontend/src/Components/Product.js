@@ -7,7 +7,7 @@ function Product({ product }) {
       <Card.Img src={product.image_url} alt={product.name} className="card-img-top" style={{ objectFit: "cover", height: "100%", width: "100%" }} />
       <Card.Body className="d-flex flex-column">
         <Card.Title>{product.name}</Card.Title>
-        <Card.Text style={{ maxHeight: "60px", overflow: "hidden" }}>
+        <Card.Text style={{ maxHeight: "80px", overflow: "auto" }}>
           {product.description}
         </Card.Text>
         <div className="mt-auto">
