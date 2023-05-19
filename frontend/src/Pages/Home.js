@@ -1,12 +1,25 @@
+import HeadLights from "../assets/HeadLights.webp";
+
 
 function Home() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <div style={{ display: 'flex', flexDirection: 'column',  alignItems: 'center', height: '100vh', paddingTop: "250px" }}>
       <div>
-        <h2>Welcome</h2>
+      
       </div>
+      <img
+        src={HeadLights}
+        alt="Car Button Logo"
+        className="logo-image"
+        style={{
+          width: "520px",
+          height: "auto",
+        }}
+      />
       <div>
-        <h3>To the High end Products App</h3>
+      <h2 style={{ textAlign: "center" }}>Welcome</h2>
+
+        <h3>To Luxury Rides App</h3>
       </div>
     </div>
     );
