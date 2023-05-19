@@ -53,7 +53,7 @@ function ProductDetails() {
 
 
   return (
-  <div className="container text-center mt-4">
+  <div className="container text-center" style={{ paddingTop: "150px" }}>
     <h1
       className="text-center"
       style={{
@@ -79,7 +79,7 @@ function ProductDetails() {
         <img
           src={product.image_url}
           alt={product.name}
-          style={{ width: "400px", height: "300px" }}
+          style={{ width: "auto", height: "300px", objectFit: "contain" }}
         />
       )}
 

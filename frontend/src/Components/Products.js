@@ -9,28 +9,20 @@ function Products() {
 
   useEffect(() => {
     axios
-    .get(`${API}/products`)
-    .then((response) => setProducts(response.data))
-    .catch((error) => console.warn("catch", error))
+      .get(`${API}/products`)
+      .then((response) => setProducts(response.data))
+      .catch((error) => console.warn("catch", error));
   }, []);
 
   return (
-    <div className="container my-5">
-      <table className="table table-striped table-bordered">
-        <thead className="thead-dark"> 
-     
-          <tr>
-            <th>Favorite</th>
-            <th>Car</th>
-            <th>See this Car</th>
-          </tr>
-        </thead>
-        <tbody>
-          {products.map((product) => {
-            return <Product key={product.id} product={product} />;
-          })}
-        </tbody>
-      </table>
+    <div className="container" style={{ paddingTop: "150px" }}>
+      <div className="row">
+        {products.map((product) => (
+          <div key={product.id} className="col-md-3 mb-4">
+            <Product product={product} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
