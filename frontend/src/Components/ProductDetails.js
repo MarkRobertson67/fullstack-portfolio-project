@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
 
 // import Reviews from "./Reviews";
 
@@ -65,7 +66,7 @@ function ProductDetails() {
       style={{
         textAlign: "center",
         fontFamily: "Comic Sans MS, cursive",
-        background: "linear-gradient(to right, blue, red)",
+        background: "linear-gradient(to right, red, red)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}
@@ -109,30 +110,26 @@ function ProductDetails() {
           >
             Delete
           </button>
-          {showConfirm && (
-            <div className="confirm">
-              <p>Are you sure you want to delete this car?</p>
-              <button
-                onClick={handleConfirmClick}
-                className="btn btn-danger btn-sm"
-              >
-                Yes
-              </button>
-              <button
-                onClick={handleCancelClick}
-                className="btn btn-secondary btn-sm"
-              >
+          <Modal show={showConfirm} onHide={handleCancelClick}>
+            <Modal.Header closeButton>
+              <Modal.Title>Confirm Deletion</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Are you sure you want to delete this car?</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleCancelClick}>
                 No
-              </button>
-            </div>
-          )}
+              </Button>
+              <Button variant="danger" onClick={handleConfirmClick}>
+                Yes
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </div>
     </article>
-    <br />
-    {/* <Reviews product={product} /> */}
   </div>
 );
+
 }
 
 export default ProductDetails;

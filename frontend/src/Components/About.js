@@ -5,7 +5,7 @@ import githubLogo from "../assets/github.png";
 import linkedinLogo from "..//assets/linkedin.png";
 
 
-export default function About( { mode } ) {   // mode because 
+export default function About() {  
 
     const teamMembers = [
     
@@ -24,9 +24,7 @@ export default function About( { mode } ) {   // mode because
 
 
     return (
-        <div className="about-wrapper" style={{ 
-          filter: mode ? "brightness(80%)" : "none",
-        }}>
+        <div className="about-wrapper">
           
                 <div className="about"><br />
                   <h1>About my Project</h1>
@@ -85,12 +83,8 @@ export default function About( { mode } ) {   // mode because
           <h1>Trello Board</h1>
         </a>
       </div>
-      {/* <div className="wireframe">
-        <a href="https://lucid.app/lucidchart" target="_blank" rel="noopener noreferrer">
-          <h1>Wireframe</h1>
-        </a>
-      </div> */}
     </div>
   </div>
 );
-    }
+}
+
