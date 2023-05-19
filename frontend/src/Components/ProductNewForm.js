@@ -57,8 +57,8 @@ function ProductNewForm() {
 
   
   return (
-    <div className="container my-5">
-      <h1>Edit this Car</h1>
+    <div className="container" style={{ paddingTop: "150px" }}>
+      <h1>Add a New Car</h1>
       <form onSubmit={handleSubmit}>
         <div className="row">
           <div className="col-md-6">
