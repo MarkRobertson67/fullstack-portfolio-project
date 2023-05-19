@@ -1,7 +1,7 @@
 # LuxuryRides App
 
 
-### *Install procedure at end of this page* 
+### *(Install procedure at end of this page)* 
 
 ## **About My Project** 
 
@@ -24,8 +24,6 @@ But LuxuryRides is more than just a platform for browsing and buying cars. We've
 To bring LuxuryRides to life, we've deployed both the front-end and back-end applications to the web. You can access our platform from anywhere, anytime, using the provided URL. Our GitHub repositories house the source code for both applications, ensuring transparency and collaboration. You'll also find comprehensive setup instructions and documentation in the readme files, allowing you to explore and contribute to the project.
 
 Experience the thrill of luxury automotive excellence with LuxuryRides. Start your journey today by visiting our website and discover a world where passion meets craftsmanship. Explore our collection, create your dream car, and immerse yourself in the captivating world of high-end and collectible automobiles. LuxuryRides is here to make your automotive dreams a reality.
-
-
 <br></br>
 
 ## App Screenshots
