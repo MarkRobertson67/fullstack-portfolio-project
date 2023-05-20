@@ -59,17 +59,20 @@ function ProductDetails() {
   });
 
   return (
-  <div className="container text-center" style={{ paddingTop: "150px" }}>
+  <div className="container text-center" style={{ paddingTop: "110px" }}>
     <article>
       <h3>
         {product.is_favorite ? <span>⭐️</span> : null} {product.name}
       </h3>
 
-      <p style={{ marginBottom: "8px" }}>Rating: {product.rating} out of 5</p>
+      
       <p style={{ marginBottom: "8px" }}>Description: {product.description}</p>
       <p style={{ marginBottom: "8px" }}>Price: {product.price ? formatter.format(product.price) : ''}</p>
-      <p style={{ marginBottom: "8px" }}>Year: {product.year}</p>
-      <p style={{ marginBottom: "8px" }}>Mileage: {product.mileage}</p>
+      <p style={{ marginBottom: "8px" }}>
+          Year: {product.year} &nbsp; &nbsp;
+          Mileage: {product.mileage && product.mileage.toLocaleString()} &nbsp; &nbsp;
+          Rating: {product.rating} out of 5
+      </p>
 
 
       {product.image_url && (
