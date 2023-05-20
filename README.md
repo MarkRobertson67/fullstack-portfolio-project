@@ -6,7 +6,7 @@
 ## **About My Project** 
 
 
-<!-- <a href="https://NETLIFY LINK" target="_blank">Click here - LuxuryRides App</a> -->
+<a href="https://myluxuryrides.netlify.app/" target="_blank">Click here - LuxuryRides App</a>
 
 
 Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"
