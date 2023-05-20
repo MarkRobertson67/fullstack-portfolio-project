@@ -7,6 +7,7 @@ const API = process.env.REACT_APP_API_URL;
 function Products() {
   const [products, setProducts] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState("default");
+  const [sortOrder, setSortOrder] = useState("ascending");
 
   useEffect(() => {
     axios
@@ -20,16 +21,20 @@ function Products() {
     setSelectedFilter(event.target.value);
   };
 
+  const handleSortOrderChange = (event) => {
+    setSortOrder(event.target.value);
+  };
+
   const sortProducts = (products) => {
     switch (selectedFilter) {
       case "rating":
-        return products.sort((a, b) => b.rating - a.rating);
+        return products.sort((a, b) => sortOrder === "ascending" ? a.rating - b.rating : b.rating - a.rating);
       case "price":
-        return products.sort((a, b) => b.price - a.price);
+        return products.sort((a, b) => sortOrder === "ascending" ? a.price - b.price : b.price - a.price);
       case "year":
-        return products.sort((a, b) => b.year - a.year);
+        return products.sort((a, b) => sortOrder === "ascending" ? a.year - b.year : b.year - a.year);
       case "mileage":
-        return products.sort((a, b) => a.mileage - b.mileage);
+        return products.sort((a, b) => sortOrder === "ascending" ? a.mileage - b.mileage : b.mileage - a.mileage);
       default:
         return products;
     }
@@ -48,6 +53,10 @@ function Products() {
             <option value="year">Year</option>
             <option value="mileage">Mileage</option>
           </select>
+          <select value={sortOrder} onChange={handleSortOrderChange}>
+            <option value="ascending">Ascending</option>
+            <option value="descending">Descending</option>
+          </select>
         </div>
       </div>
       <div className="row">
@@ -62,5 +71,6 @@ function Products() {
 }
 
 export default Products;
+
 
 
