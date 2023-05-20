@@ -12,7 +12,7 @@ function Products() {
     axios
       .get(`${API}/products`)
       .then((response) => setProducts(response.data))
-      .catch((error) => console.warn("catch", error));
+      .catch((error) => console.warn("Error", error));
   }, []);
 
   const handleFilterChange = (event) => {
