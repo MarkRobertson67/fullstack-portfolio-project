@@ -13,7 +13,7 @@ function Products() {
       .get(`${API}/products`)
       .then((response) => setProducts(response.data))
       .catch((error) => console.warn("Error", error));
-      
+
   }, []);
 
   const handleFilterChange = (event) => {
@@ -38,7 +38,7 @@ function Products() {
   const sortedProducts = sortProducts(products);
 
   return (
-    <div className="container" style={{ paddingTop: "150px" }}>
+    <div className="container" style={{ paddingTop: "110px" }}>
       <div className="row mb-4">
         <div className="col">
           <select value={selectedFilter} onChange={handleFilterChange}>
