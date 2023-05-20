@@ -51,7 +51,9 @@ const NavBar = () => {
           <p style={{ margin: 0 }}>15839 Auto Lane</p>
           <p style={{ margin: 0 }}>Turboville, NY</p>
           <p style={{ margin: 0 }}>12837</p>
-          <p style={{ margin: 0 }}>1-838-CAR-4YOU</p>
+          <p style={{ margin: 0 }}>1-800-CAR-4YOU</p>
+          <p style={{ margin: 0 }}>Mark@LuxuryRides.co.uk</p>
+
         </div>
         <div className="d-flex justify-content-center align-items-center" style={{ flex: "1" }}>
           <center><Title /></center>
