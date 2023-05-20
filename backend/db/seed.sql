@@ -34,4 +34,4 @@ VALUES
 
 ('BMW 2002', 'Compact and sporty car with a cult following.', 90000, 4.0, true, 'https://www.bmw-m.com/content/dam/bmw/marketBMW_M/common/topics/magazine-article-pool/2021/2002-turbo/bmw-2002-turbo-stage-teaser.jpg.asset.1626782156930.jpg', 1973, 70000),
 
-('Jaguar XJ6', 'Luxury sedan known for its comfort and refinement.', 150000, 4.2, false, 'https://res.cloudinary.com/mecum/image/upload/c_fill,f_auto,g_auto,q_auto,w_1920/v1669823128/auctions/fl14/fl0114-172133/267960_1.jpg?', 1978, 60000)
+('Jaguar XJ6', 'Luxury sedan known for its comfort and refinement.', 150000, 4.2, false, 'https://res.cloudinary.com/mecum/image/upload/c_fill,f_auto,g_auto,q_auto,w_1920/v1669823128/auctions/fl14/fl0114-172133/267960_1.jpg?', 1978, 60000);
