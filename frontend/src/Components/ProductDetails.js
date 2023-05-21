@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
+import "./ProductDetails.css";
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -77,19 +78,13 @@ function ProductDetails() {
 
       {product.image_url && (
         <img
-        src={product.image_url}
-        alt={product.name}
-        style={{
-          width: "auto",
-          height: "300px",
-          objectFit: "contain",
-          transition: "transform 0.3s",
-          '@media (max-width: 500px)': {
-            width: "200px",
-          },
-        }}
-        className="product-image"
-      />
+          src={product.image_url}
+          alt={product.name}
+          className="product-image"
+          style={{ width: "auto", height: "300px", objectFit: "contain", transition: "transform 0.3s", }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.5)")}
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        />
       )}<br /><br />
 
       <div className="row text-center">
