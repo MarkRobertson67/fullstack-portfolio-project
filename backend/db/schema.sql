@@ -15,10 +15,9 @@ CREATE TABLE product (
     name TEXT NOT NULL,
     description TEXT NOT NULL, 
     price INTEGER NOT NULL, 
-    rating NUMERIC,
-    CHECK (rating >= 0 AND rating <= 5),
+    rating NUMERIC CHECK (rating >= 0 AND rating <= 5) NOT NULL,
     is_favorite BOOLEAN,
-    image_url TEXT,
-    year INTEGER,
-    mileage INTEGER
+    image_url TEXT CHECK (image_url ~* '^https?://.+') NOT NULL,
+    year INTEGER NOT NULL CHECK (year >= 0),
+    mileage INTEGER NOT NULL CHECK (mileage >= 0)
 );

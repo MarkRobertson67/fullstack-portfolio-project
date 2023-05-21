@@ -83,11 +83,12 @@ function ProductNewForm() {
                 value={product.description}
                 placeholder="Tell us all about the car..."
                 onChange={handleTextChange}
+                required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="calories">Price:</label>
+              <label htmlFor="price">Price:</label>
               <input
                 id="price"
                 className="form-control"
@@ -96,6 +97,7 @@ function ProductNewForm() {
                 value={product.price}
                 placeholder="How much"
                 onChange={handleTextChange}
+                required
               />
             </div>
 
@@ -109,6 +111,7 @@ function ProductNewForm() {
                 value={product.image_url}
                 placeholder="Enter a URL"
                 onChange={handleTextChange}
+                required
               />
             </div>
 
@@ -126,23 +129,25 @@ function ProductNewForm() {
                 value={product.rating}
                 placeholder="From 0 to 5"
                 onChange={handleTextChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="calories">Year:</label>
+              <label htmlFor="year">Year:</label>
               <input
                 id="year"
                 className="form-control"
                 type="number"
-                name="calories"
+                name="year"
                 value={product.year}
                 placeholder="Enter year"
                 onChange={handleTextChange}
+                required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="calories">Mileage:</label>
+              <label htmlFor="mileage">Mileage:</label>
               <input
                 id="mileage"
                 className="form-control"
@@ -151,6 +156,7 @@ function ProductNewForm() {
                 value={product.mileage}
                 placeholder="Enter mileage"
                 onChange={handleTextChange}
+                required
               />
             </div>
 
