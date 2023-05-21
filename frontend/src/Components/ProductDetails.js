@@ -77,12 +77,19 @@ function ProductDetails() {
 
       {product.image_url && (
         <img
-          src={product.image_url}
-          alt={product.name}
-          style={{ width: "auto", height: "300px", objectFit: "contain", transition: "transform 0.3s", }}
-          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.5)")}
-            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-        />
+        src={product.image_url}
+        alt={product.name}
+        style={{
+          width: "auto",
+          height: "300px",
+          objectFit: "contain",
+          transition: "transform 0.3s",
+          '@media (max-width: 700px)': {
+            width: "500px",
+          },
+        }}
+        className="product-image"
+      />
       )}<br /><br />
 
       <div className="row text-center">
