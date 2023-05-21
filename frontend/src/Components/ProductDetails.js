@@ -80,8 +80,8 @@ function ProductDetails() {
         <img
           src={product.image_url}
           alt={product.name}
-          className="product-image"
-          style={{ width: "auto", height: "300px", objectFit: "contain", transition: "transform 0.3s", }}
+          className="singleProduct-image"
+          style={{ width: "460px", height: "auto", objectFit: "contain", transition: "transform 0.3s", }}
           onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.5)")}
             onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
         />
