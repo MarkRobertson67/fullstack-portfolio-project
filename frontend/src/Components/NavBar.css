@@ -5,7 +5,13 @@
   
   @media (max-width: 650px) {
     .logo-image {
-      width: 150px;
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .logo-image {
+      width: 100px;
     }
   }
   
