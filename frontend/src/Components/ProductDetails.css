@@ -1,12 +1,11 @@
+.singleProduct-image {
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
 @media (max-width: 500px) {
-    .product-image {
-      width: 200px;
-    }
+  .singleProduct-image {
+    width: 100px;
   }
-  
-  @media (min-width: 501px) and (max-width: 700px) {
-    .product-image {
-      width: 250px;
-    }
-  }
-  
+}
