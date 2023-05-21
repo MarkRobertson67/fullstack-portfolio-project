@@ -1,7 +1,5 @@
 .singleProduct-image {
   height: 300px;
-  object-fit: contain;
-  transition: transform 0.3s;
 }
 
 @media (max-width: 500px) {
