@@ -37,7 +37,7 @@ function ProductEditForm() {
   };
 
   const handleCheckboxChange = (event) => {
-    console.log(event.target.id)
+    // console.log(event.target.id)
     setProduct({ ...product, [event.target.id]: !product[event.target.id] });
   };
 
