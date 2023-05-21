@@ -123,7 +123,6 @@ function ProductDetails() {
     </article>
   </div>
 );
-
 }
 
 export default ProductDetails;
