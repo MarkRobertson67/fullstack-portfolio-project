@@ -84,7 +84,7 @@ function ProductDetails() {
           height: "300px",
           objectFit: "contain",
           transition: "transform 0.3s",
-          '@media (max-width: 700px)': {
+          '@media (max-width: 500px)': {
             width: "400px",
           },
         }}
