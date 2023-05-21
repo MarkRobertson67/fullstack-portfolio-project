@@ -46,14 +46,27 @@ function Products() {
     <div className="container" style={{ paddingTop: "110px" }}>
       <div className="row mb-4">
         <div className="col">
-          <select value={selectedFilter} onChange={handleFilterChange}>
+          <select value={selectedFilter} onChange={handleFilterChange} style={{
+              marginRight: "10px",
+              fontSize: "14px",
+              padding: "5px",
+              borderRadius: "4px",
+              color: "#fff", 
+              backgroundColor: "#333", 
+            }}>
             <option value="default">Sort by...</option>
             <option value="rating">Rating</option>
             <option value="price">Price</option>
             <option value="year">Year</option>
             <option value="mileage">Mileage</option>
           </select>
-          <select value={sortOrder} onChange={handleSortOrderChange}>
+          <select value={sortOrder} onChange={handleSortOrderChange} style={{
+              fontSize: "14px",
+              padding: "5px",
+              borderRadius: "4px",
+              color: "#fff", 
+              backgroundColor: "#333", 
+            }}>
             <option value="ascending">Ascending</option>
             <option value="descending">Descending</option>
           </select>
