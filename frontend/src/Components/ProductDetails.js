@@ -17,7 +17,7 @@ function ProductDetails() {
     axios
       .get(`${API}/products/${id}`)
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setProduct(response.data);
       })
       .catch((e) => {
