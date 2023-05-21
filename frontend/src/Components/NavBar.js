@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CarButton from "../assets/CarButton.png";
 import LuxuryRidesLogo from "../assets/LuxuryRides.png";
+import "./NavBar.css";
 
 const Logo = () => {
   return (
@@ -35,13 +36,11 @@ const Title = () => {
       src={LuxuryRidesLogo}
       alt="LuxuryRides Logo"
       className="logo-image"
-      style={{
-        width: "275px",
-        height: "auto",
-      }}
     />
   );
 };
+
+
 
 const NavBar = () => {
   return (
@@ -53,7 +52,7 @@ const NavBar = () => {
         <div style={{ fontSize: "10px", color: "white", marginBottom: "10px", marginRight: "17px" }}>
           <style>
             {`
-            @media (max-width: 600px) {
+            @media (max-width: 700px) {
               .address-section {
                 display: none;
               }
@@ -78,7 +77,7 @@ const NavBar = () => {
 
         <div style={{ fontSize: "10px", color: "white", marginBottom: "10px", marginRight: "17px" }}>
           <style>{`
-            @media (max-width: 700px) {
+            @media (max-width: 750px) {
               .hours-section {
                 display: none;
               }
@@ -95,7 +94,7 @@ const NavBar = () => {
 
         <div className="ml-auto" style={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
         <style>{`
-            @media (max-width: 775px) {
+            @media (max-width: 800px) {
               .button-section {
                 display: none;
               }
