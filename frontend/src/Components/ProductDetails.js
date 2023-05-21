@@ -43,6 +43,7 @@ function ProductDetails() {
   };
 
   const handleCancelClick = () => {
+    navigate(`/products`);
     setShowConfirm(false);
   };
 
