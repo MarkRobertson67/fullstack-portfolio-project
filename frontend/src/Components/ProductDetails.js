@@ -85,7 +85,7 @@ function ProductDetails() {
           objectFit: "contain",
           transition: "transform 0.3s",
           '@media (max-width: 500px)': {
-            width: "400px",
+            width: "200px",
           },
         }}
         className="product-image"
