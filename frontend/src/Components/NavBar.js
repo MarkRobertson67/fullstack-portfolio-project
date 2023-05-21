@@ -95,7 +95,7 @@ const NavBar = () => {
 
         <div className="ml-auto" style={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
         <style>{`
-            @media (max-width: 600px) {
+            @media (max-width: 775px) {
               .button-section {
                 display: none;
               }
