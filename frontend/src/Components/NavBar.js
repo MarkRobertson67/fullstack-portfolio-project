@@ -78,7 +78,7 @@ const NavBar = () => {
 
         <div style={{ fontSize: "10px", color: "white", marginBottom: "10px", marginRight: "17px" }}>
           <style>{`
-            @media (max-width: 600px) {
+            @media (max-width: 700px) {
               .hours-section {
                 display: none;
               }
