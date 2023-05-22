@@ -6,6 +6,9 @@
 ## **About My Project** 
 
 
+<a href="https://scribehow.com/shared/How_to_Edit_and_Delete_Car_Details_on_Scribe__Sg9wWxUdQMW3_RqAsx6OJQ" target="_blank">Click here for details on how to use the App !</a>
+
+
 <a href="https://myluxuryrides.netlify.app/" target="_blank">Click here - LuxuryRides App</a>
 
 

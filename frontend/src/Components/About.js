@@ -26,7 +26,13 @@ export default function About() {
     return (
         <div className="about-wrapper">
           
-                <div className="about"><br />
+                <div className="about"><br /><br />
+
+                <div className="scribe">
+                <a href="https://scribehow.com/shared/How_to_use_the_Luxury_Rides_App__Sg9wWxUdQMW3_RqAsx6OJQ" target="_blank" rel="noopener noreferrer">
+                <h1>Click here to learn how to use this App</h1>
+                </a>
+                </div><br /><br />
                   <h1>About my Project</h1>
                   
                   <p>
