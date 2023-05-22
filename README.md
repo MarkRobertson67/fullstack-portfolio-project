@@ -12,6 +12,9 @@
 <a href="https://myluxuryrides.netlify.app/" target="_blank">Click here - LuxuryRides App</a>
 
 
+<a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank">Too busy to read? Click here and my assistant will describe the App to you. </a>
+
+
 Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"
 
 Welcome to LuxuryRides, the premier platform for enthusiasts and collectors seeking the finest and most sought-after automobiles. Our full-stack application combines cutting-edge technology with a passion for luxury vehicles, providing you with an exceptional user experience. Whether you're a connoisseur, a dreamer, or a discerning buyer, LuxuryRides is your gateway to the world of high-end automotive excellence.
