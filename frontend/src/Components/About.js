@@ -35,6 +35,13 @@ export default function About() {
                 </div><br /><br />
                   <h1>About my Project</h1>
                   
+                  <div className="scribe">
+                <a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank" rel="noopener noreferrer">
+                <h1>Too busy to read? Click here and my assistant will describe the App to you.</h1>
+                </a>
+                </div><br /><br />
+
+
                   <p>
                   Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"
 
