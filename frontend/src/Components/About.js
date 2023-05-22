@@ -25,22 +25,23 @@ export default function About() {
 
     return (
         <div className="about-wrapper">
-          
-                <div className="about"><br /><br />
+          <br />
 
+                <div className="about"><br /><br />
+                <h1 style={{ fontWeight: 'bold' }}>About my Project</h1>
+
+                <br />
                 <div className="scribe">
                 <a href="https://scribehow.com/shared/How_to_use_the_Luxury_Rides_App__Sg9wWxUdQMW3_RqAsx6OJQ" target="_blank" rel="noopener noreferrer">
-                <h1>Click here to learn how to use this App</h1>
+                <h1 style={{ fontSize: '20px' }}>Click here to learn how to use this App</h1>
                 </a>
-                </div><br /><br />
-                  <h1>About my Project</h1>
-                  
-                  <div className="scribe">
-                <a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank" rel="noopener noreferrer">
-                <h1>Too busy to read? Click here and my assistant will describe the App to you.</h1>
-                </a>
-                </div><br /><br />
+                </div><br />
 
+                <div className="scribe">
+                <a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank" rel="noopener noreferrer">
+                <h1 style={{ fontSize: '20px' }}>Too busy to read? Click here and my assistant will describe the App to you.</h1>
+                </a>
+                </div><br />
 
                   <p>
                   Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"
