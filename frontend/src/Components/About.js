@@ -17,7 +17,7 @@ export default function About() {
             I'm currently learning Express, having already studied React, JavaScript, HTML & CSS and I am training to become a software engineer so that I can solve real-world problems.  When I'm not coding, I enjoy movies, watching Formula 1 racing, music, travel and playing with my German Shepherd.
             
             I would very much enjoy working for a start-up (as I have start-up experience) or even a large financial firm, as my experience up until Pursuit has been in the financial markets.`,
-            github: "https://github.com/MarkRobertson67",
+            github: "https://github.com/MarkRobertson67/fullstack-portfolio-project",
             linkedin:"https://www.linkedin.com/in/mark-robertson-ny-uk/",
         },
     ];
@@ -37,7 +37,7 @@ export default function About() {
                 </a>
                 </div><br />
 
-                <div className="scribe">
+                <div className="AiGirl">
                 <a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank" rel="noopener noreferrer">
                 <h1 style={{ fontSize: '20px' }}>Too busy to read? Click here and my assistant will describe the App to you.</h1>
                 </a>
