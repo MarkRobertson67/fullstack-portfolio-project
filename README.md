@@ -6,7 +6,13 @@
 ## **About My Project** 
 
 
-<!-- <a href="https://NETLIFY LINK" target="_blank">Click here - LuxuryRides App</a> -->
+<a href="https://scribehow.com/shared/How_to_Edit_and_Delete_Car_Details_on_Scribe__Sg9wWxUdQMW3_RqAsx6OJQ" target="_blank">Click here for details on how to use the App !</a>
+
+
+<a href="https://myluxuryrides.netlify.app/" target="_blank">Click here - LuxuryRides App</a>
+
+
+<a href="https://app.hourone.ai/player/1e279eef158e41c3a9ec67a381841bce" target="_blank">Too busy to read? Click here and my assistant will describe the App to you. </a>
 
 
 Introducing "LuxuryRides: The Ultimate Destination for High-End and Collectable Cars"

@@ -2,26 +2,31 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CarButton from "../assets/CarButton.png";
 import LuxuryRidesLogo from "../assets/LuxuryRides.png";
+import "./NavBar.css";
 
 const Logo = () => {
   return (
-    <Link className="navbar-brand d-flex flex-column align-items-center" to="/products">
-      <img
-        src={CarButton}
-        alt="Car Button Logo"
-        className="logo-image"
-        style={{
-          width: "120px",
-          height: "auto",
-          transition: "transform 0.3s",
-        }}
-        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
-        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
-      />
-      <div className="ml-2" style={{ fontSize: "14px" }}>
-        Our Inventory
+    <div className="d-flex flex-column align-items-center">
+      <div className="ml-2" style={{ fontSize: "10px", color: "white", marginTop: "-0px" }}>
+        Our Inventory<br /><br />
+        <p style={{ margin: -10,  }}>1-800-CAR-4YOU</p>
       </div>
-    </Link>
+      <Link className="navbar-brand d-flex flex-column align-items-center" to="/products">
+        <img
+          src={CarButton}
+          alt="Car Button Logo"
+          className="logo-image"
+          style={{
+            width: "120px",
+            height: "auto",
+            transition: "transform 0.3s",
+            marginTop: "-20px",
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+          onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        />
+      </Link>
+    </div>
   );
 };
 
@@ -31,42 +36,100 @@ const Title = () => {
       src={LuxuryRidesLogo}
       alt="LuxuryRides Logo"
       className="logo-image"
-      style={{
-        width: "275px",
-        height: "auto",
-      }}
     />
   );
 };
 
+
+
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#616' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#616', padding: '0.5rem', height: '100px' }}>
       <div className="container-fluid">
         <Logo />
-        <div className="d-flex flex-grow-1 justify-content-center align-items-center">
-          <Title />
+
+        
+        <div style={{ fontSize: "10px", color: "white", marginBottom: "10px", marginRight: "17px" }}>
+          <style>
+            {`
+            @media (max-width: 700px) {
+              .address-section {
+                display: none;
+              }
+            }
+          `}
+          </style>
+          <div className="address-section">
+            <p style={{ margin: 0 }}>15839 Auto Lane</p>
+            <p style={{ margin: 0 }}>Turboville, NY</p>
+            <p style={{ margin: 0 }}>12837</p>
+            <p style={{ margin: 0 }}>Mark@LuxuryRides.co.uk</p>
+          </div>
         </div>
-        <div className="ml-auto">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link btn btn-danger me-2 shadow-sm" to="/products/new">
-                New Car
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link btn btn-danger shadow-sm" to="/about">
-                About
-              </Link>
-            </li>
-          </ul>
+
+
+
+        <div className="navbar-title d-flex justify-content-center align-items-center" style={{ flex: "1" }}>
+          <center><Title /></center>
+        </div>
+
+
+
+        <div style={{ fontSize: "10px", color: "white", marginBottom: "10px", marginRight: "17px" }}>
+          <style>{`
+            @media (max-width: 750px) {
+              .hours-section {
+                display: none;
+              }
+            }
+          `}</style>
+          <div className="hours-section">
+            <p style={{ margin: 0 }}>Hours:</p>
+            <p style={{ margin: 0 }}>M-F: 10am - 5pm</p>
+            <p style={{ margin: 0 }}>Sat: 8am - 8pm</p>
+            <p style={{ margin: 0 }}>Closed Sunday</p>
+          </div>
+        </div>
+
+
+        <div className="ml-auto" style={{ display: "flex", flexDirection: "column", marginLeft: "10px" }}>
+        <style>{`
+            @media (max-width: 800px) {
+              .button-section {
+                display: none;
+              }
+            }
+          `}</style>
+          <div className="button-section">
+
+            
+            <Link className="nav-link btn btn-danger btn-sm mb-1" to="/products/new" style={{ fontSize: "12px", padding: "0.25rem 0.5rem", color: "white" }}>
+              New Car
+            </Link>
+            <Link className="nav-link btn btn-danger btn-sm" to="/about" style={{ fontSize: "12px", padding: "0.25rem 0.5rem", color: "white" }}>
+              About
+            </Link>
+
+
+          </div>
         </div>
       </div>
     </nav>
   );
 };
 
+
 export default NavBar;
+
+
+
+
+
+
+
+
+
+
 
 
 

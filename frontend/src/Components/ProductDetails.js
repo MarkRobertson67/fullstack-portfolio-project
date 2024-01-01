@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
+import "./ProductDetails.css";
 
 
 const API = process.env.REACT_APP_API_URL;
@@ -17,7 +18,7 @@ function ProductDetails() {
     axios
       .get(`${API}/products/${id}`)
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setProduct(response.data);
       })
       .catch((e) => {
@@ -42,6 +43,7 @@ function ProductDetails() {
   };
 
   const handleCancelClick = () => {
+    navigate(`/products`);
     setShowConfirm(false);
   };
 
@@ -59,25 +61,29 @@ function ProductDetails() {
   });
 
   return (
-  <div className="container text-center" style={{ paddingTop: "150px" }}>
+  <div className="container text-center" style={{ paddingTop: "110px" }}>
     <article>
       <h3>
         {product.is_favorite ? <span>⭐️</span> : null} {product.name}
       </h3>
 
-      <p style={{ marginBottom: "8px" }}>Rating: {product.rating} out of 5</p>
+      
       <p style={{ marginBottom: "8px" }}>Description: {product.description}</p>
       <p style={{ marginBottom: "8px" }}>Price: {product.price ? formatter.format(product.price) : ''}</p>
-      <p style={{ marginBottom: "8px" }}>Year: {product.year}</p>
-      <p style={{ marginBottom: "8px" }}>Mileage: {product.mileage}</p>
+      <p style={{ marginBottom: "8px" }}>
+          Year: {product.year} &nbsp; &nbsp;
+          Mileage: {product.mileage && product.mileage.toLocaleString()} &nbsp; &nbsp;
+          Rating: {product.rating} out of 5
+      </p>
 
 
       {product.image_url && (
         <img
+          className="singleProduct-image"
           src={product.image_url}
           alt={product.name}
-          style={{ width: "auto", height: "300px", objectFit: "contain", transition: "transform 0.3s", }}
-          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.5)")}
+          style={{ width: "338px", height: "auto", objectFit: "contain", transition: "transform 0.3s", }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.8)")}
             onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
         />
       )}<br /><br />
@@ -118,7 +124,6 @@ function ProductDetails() {
     </article>
   </div>
 );
-
 }
 
 export default ProductDetails;

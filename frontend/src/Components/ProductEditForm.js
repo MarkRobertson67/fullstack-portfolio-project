@@ -37,7 +37,7 @@ function ProductEditForm() {
   };
 
   const handleCheckboxChange = (event) => {
-    console.log(event.target.id)
+    // console.log(event.target.id)
     setProduct({ ...product, [event.target.id]: !product[event.target.id] });
   };
 
@@ -73,7 +73,7 @@ function ProductEditForm() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="category">Description:</label>
+              <label htmlFor="description">Description:</label>
               <input
                 id="description"
                 className="form-control"
@@ -82,11 +82,12 @@ function ProductEditForm() {
                 value={product.description}
                 placeholder="Tell us all about the car..."
                 onChange={handleTextChange}
+                required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="calories">Price:</label>
+              <label htmlFor="price">Price:</label>
               <input
                 id="price"
                 className="form-control"
@@ -94,6 +95,7 @@ function ProductEditForm() {
                 name="price"
                 value={product.price}
                 onChange={handleTextChange}
+                required
               />
             </div>
 
@@ -106,6 +108,7 @@ function ProductEditForm() {
                 name="photo"
                 value={product.image_url}
                 onChange={handleTextChange}
+                required
               />
             </div>
 
@@ -122,22 +125,24 @@ function ProductEditForm() {
                 name="rating"
                 value={product.rating}
                 onChange={handleTextChange}
+                required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="calories">Year:</label>
+              <label htmlFor="year">Year:</label>
               <input
                 id="year"
                 className="form-control"
                 type="number"
-                name="calories"
+                name="year"
                 value={product.year}
                 onChange={handleTextChange}
+                required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="calories">Mileage:</label>
+              <label htmlFor="mileage">Mileage:</label>
               <input
                 id="mileage"
                 className="form-control"
@@ -145,13 +150,11 @@ function ProductEditForm() {
                 name="mileage"
                 value={product.mileage}
                 onChange={handleTextChange}
+                required
               />
             </div>
-
-
           </div>
         </div>
-
 
         <div className="form-group form-check">
           <input

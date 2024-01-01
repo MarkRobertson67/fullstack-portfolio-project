@@ -1,0 +1,9 @@
+.singleProduct-image {
+  height: 300px;
+}
+
+@media (max-width: 500px) {
+  .singleProduct-image {
+    width: 100px;
+  }
+}
