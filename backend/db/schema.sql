@@ -1,11 +1,11 @@
--- if our db already exists, drop it
-DROP DATABASE IF EXISTS products;
+-- -- if our db already exists, drop it
+-- DROP DATABASE IF EXISTS products;
 
--- Create our Database
-CREATE DATABASE products;
+-- -- Create our Database
+-- CREATE DATABASE products;
 
--- Connect to the db
-\c products;
+-- -- Connect to the db
+-- \c products;
 
 -- Create a table for our products
 DROP TABLE IF EXISTS product;

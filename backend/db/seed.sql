@@ -1,4 +1,4 @@
-\c products;
+-- \c products;
 
 
 INSERT INTO product (name, description, price, rating, is_favorite, image_url, year, mileage) 
