@@ -8,7 +8,7 @@ VALUES
 
 ('Jaguar XK-E', 'Sleek and powerful sports car often referred to as the E-Type.', 380000, 4.7, true, 'https://cdn.dealeraccelerate.com/ecpch/2/236/7853/790x1024/w/1965-jaguar-e-type-coupe', 1965, 40000),
 
-('Ford GT40', 'Legendary race car that achieved great success at Le Mans.', 12000000, 5.0, true, 'https://revsinstitute.org/wp-content/uploads/2014/05/Ford-GT40-1966-front-3-4.jpg', 1966, 10000),
+('Ford GT40', 'Legendary race car that achieved great success at Le Mans.', 12000000, 5.0, true, 'https://hips.hearstapps.com/autoweek/assets/s3fs-public/130209817.jpg?resize=1200:*', 1966, 10000),
 
 ('BMW 3.0 CSL', 'High-performance coupe known for its racing pedigree.', 400000, 4.5, true, 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffarm5.staticflickr.com%2F4231%2F35427201150_d171d0b7ba_b.jpg&f=1&nofb=1&ipt=5728ca2b71bfd3703315ab9fbb3f02d157ac796531f7d62f1b6f88b19f5625ad&ipo=images', 1973, 45000),
 
