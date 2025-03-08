@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import HeadLights from "../assets/HeadLights.webp";
+
 
 
 function Home() {
@@ -7,6 +9,7 @@ function Home() {
       <div>
       
       </div>
+      <Link to="/products">
       <img
         src={HeadLights}
         alt="Car Button Logo"
@@ -15,7 +18,10 @@ function Home() {
           width: "520px",
           height: "auto",
         }}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
       />
+    </Link>
       <div>
       <h2 style={{ textAlign: "center" }}>Welcome</h2>
 
