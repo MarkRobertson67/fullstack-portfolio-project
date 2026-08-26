@@ -9,8 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "db:init": "psql -U postgres -f db/schema.sql",
-    "db:seed": "psql -U postgres -f db/seed.sql"
+    "db:init": "node db/run-sql.js db/schema.sql",
+    "db:seed": "node db/run-sql.js db/seed.sql",
+    "db:reset": "npm run db:init && npm run db:seed"
   },
   "author": "",
   "license": "ISC",
