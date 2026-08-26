@@ -1,7 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": "22.x"
+  },
+  "description": "Node.js and PostgreSQL backend API for the My Luxury Rides application",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
