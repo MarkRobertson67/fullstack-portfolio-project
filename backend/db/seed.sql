@@ -27,7 +27,7 @@ VALUES
 
 ('Ford Mustang', 'Iconic American pony car with a classic design.', 200000, 4.3, true, 'https://car-brand-names.com/wp-content/uploads/2021/01/Ford-Mustang-1967-1536x960.jpg', 1967, 90000),
 
-('Lamborghini Miura', 'Revolutionary supercar with a mid-engine layout.', 5000000, 4.6, true, 'https://assets.hemmings.com/blog/wp-content/uploads/2015/03/AM15_r211_001.jpg', 1968, 35000),
+('Lamborghini Miura', 'Revolutionary supercar with a mid-engine layout.', 5000000, 4.6, true, 'https://www.lambocars.com/wp-content/uploads/2011/01/wp3134540.jpg', 1968, 35000),
 
 ('Alfa Romeo Spider', 'Stylish Italian convertible for open-top driving.', 120000, 4.1, false, 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphotos.classiccars.com%2Fcc-temp%2Flisting%2F131%2F7970%2F19304058-1974-alfa-romeo-2000-spider-veloce-std.jpg&f=1&nofb=1&ipt=1870c1ab32167478fc974827d79d9c822478a337663198d2a79c38ad0ef180ed&ipo=images', 1974, 55000),
 
