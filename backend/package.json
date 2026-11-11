@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "engines": {
-    "node": "22.x"
+    "node": ">=22.23.4 <23"
   },
   "description": "Node.js and PostgreSQL backend API for the My Luxury Rides application",
   "main": "app.js",
